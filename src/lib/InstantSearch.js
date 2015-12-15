@@ -19,7 +19,9 @@ function defaultCreateURL() { return '#'; }
  * @param  {string} options.indexName The name of the main index
  * @param  {string} [options.numberLocale] The locale used to display numbers. This will be passed
  * to Number.prototype.toLocaleString()
- * @param  {Object} [options.searchParameters] Initial search configuration.
+ * @param  {Object} [options.searchParameters] Additional parameters to pass to
+ * the Algolia API. You can find all the possible options here:
+ * https://community.algolia.com/algoliasearch-helper-js/docs/SearchParameters.html
  * @param  {Object|boolean} [options.urlSync] Url synchronization configuration.
  * Setting to `true` will synchronize the needed search parameters with the browser url.
  * @param  {string[]} [options.urlSync.trackedParameters] Parameters that will
